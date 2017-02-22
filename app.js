@@ -10,12 +10,18 @@ function cars(){
 
 	//Create an array declaration named cars and set each car variable as the values.
 
+	var cars = [car1, car2, car3];
+
 	//Print the created array
+
+	console.log(cars);
 
 	//Print the array length
 
+	console.log(cars.length);
+
 	//Return the created array and the array length
-	return;
+	return cars + cars.length;
 }
 
 console.log(cars());
@@ -29,12 +35,18 @@ console.log(cars());
 function order(food, drink, dessert){
 	//Store the parameters in an array called "order"
 
+	var order = [food, drink, dessert];
+
 	//Print the array named "order"
 	
+	console.log(order);
+
 	//Print the length of the array named "order"
 
+	console.log(order.length);
+
 	//Return the order as a complete sentence represented as a string
-	return;
+	return "Lets order : " + order[0] + " " + order[1] + " " + order[2] + ".";
 }
 
 console.log(order("Burger", "root beer", "frosty"));
@@ -58,8 +70,14 @@ var currentClasses = [
 function loopToChange(classes){
 	//Print the parameter that is being passed through the function
 
+	console.log(classes);
+
 	//Use a For loop to iterate through each value in the passed array
 	
+	for (var i = classes.length; i >= 0; i--) {
+		console.log(classes[i]);
+	}
+
 	//Return classes
 	return;
 }
@@ -75,8 +93,23 @@ console.log(loopToChange(currentClasses));
 function arrayMethodToLoop(numbers){
 	//Print the parameter that is being passed through the function
 
+	console.log(numbers)
+
 	//Use the forEach() method to add 5 to each value in the passed array
 	
+	numbers.forEach(function(cur) {
+		// console.log('my current value ', cur);
+		// console.log('my index is ', index);
+		// console.log('array is ', ar);
+		var curt = cur + 5;
+		// var lol = splices.push(cur + 5);
+		// console.log(lol);
+		// var splices = numbers.splice(numbers.length, curt);
+		// console.log(splices);
+		numbers.push(curt)
+	})
+
+
 	//Return the changed array
 	return;
 }
