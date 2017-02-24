@@ -4,11 +4,15 @@ You must give a short explanation for each answer.
 
 1) Create a reference to an array of integers named "cat".
 
+Answer:
+
 2) What is the output of the following code fragment?
 
 var cat = [2, 4, 6, 8];
 
 console.log(cat[0] + " " + cat[1]);
+
+Answer:"2 4" It's "2 4" because the console log isn't adding the two numbers in the array together, but is putting those two values next to each other in, like in a sentence.
 
 3) What is the output of the following code fragment?
 
@@ -19,14 +23,22 @@ y[1] = 88;
 
 console.log(y[0] + " " + y[1] + " " + y[5]);
 
+Answer: "34 88 undefined" The reason for this is because the function is not adding the two numbers, but is just putting them next to each other, and the reason there is an undefined is because the value "y[5]" does not have a number assigned to it.
+
 4) What is the output of the following code fragment?
 
 var zip = [7, 3, 4, 1, 9];
 
 console.log(zip[2+1]);
 
+Answer: "1" The reason it's this and not 7 is because this function isn't adding the two values, but instead is, for a lack of a better word, counting. So the console.log is using "zip[2]" and since counting an array starts from 0 the number it's calling out is 4, but since it's "zip[2+1]" what it's really saying is "zip[3]" and in the array "3" is the value 1, that's why the output is 1. 
+
+
 5) What is the output of the following code fragment?
 
 var x = [7, 3, 4, , , , , , ];
 
 console.log((x[0] + x[1]) + " " + x[5]);
+
+Answer:"10 undefined"
+
