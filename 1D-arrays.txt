@@ -12,7 +12,7 @@ var cat = [2, 4, 6, 8];
 
 console.log(cat[0] + " " + cat[1]);
 
-Answer:"2 4" It's "2 4" because the console log isn't adding the two numbers in the array together, but is putting those two values next to each other in, like in a sentence.
+Answer:"2 4" It's "2 4" because the console log isn't adding the two numbers in the array together, but is putting a space or " " between the two values so as not to add them but put them next to each other, like in a sentence.
 
 3) What is the output of the following code fragment?
 
@@ -23,7 +23,7 @@ y[1] = 88;
 
 console.log(y[0] + " " + y[1] + " " + y[5]);
 
-Answer: "34 88 undefined" The reason for this is because the function is not adding the two numbers, but is just putting them next to each other, and the reason there is an undefined is because the value "y[5]" does not have a number assigned to it.
+Answer: "34 88 undefined" The reason for this is because the function is not adding the two numbers, but is just putting them next to each other by putting a " " in between them, and the reason there is an undefined is because the value "y[5]" does not have a number assigned to it.
 
 4) What is the output of the following code fragment?
 
@@ -40,5 +40,5 @@ var x = [7, 3, 4, , , , , , ];
 
 console.log((x[0] + x[1]) + " " + x[5]);
 
-Answer:"10 undefined"
+Answer:"10 undefined" The reason for this output is, the console.log is adding the values of x[0] and x[1], and since theres a space between the prior and x[5], the sum of those two are not being added with x[5]. and since theres not assigned value for x[5], then it's undefined.
 
